@@ -1,3 +1,10 @@
+*~
+.idea
+*.xml
+*.txt
+*.html
+*.htm
+
 !Build/
 .last_cover_stats
 /META.yml
