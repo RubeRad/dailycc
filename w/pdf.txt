@@ -1,0 +1,105 @@
+  January      February                April       May        June                        August
+                           March                                              July
+1) LC1, SC1    1)  III.6             1) VIII.5  1)  X.3     1) XV.5
+                          1)  VI.5                                      1) LC 96         1) 123, 63
+2) WCF I.1,    2)  III.7  2)  LC 26  2) LC 44,  2)  X.4     2) XV.6     2) XIX.6         2) 124
+                                         SC 25
+3) LC 2        3)  III.8  3)  VI.6,             3)  LC 60   3) XVI.1    3) LC 97         3) 125
+4) I.2,        4)  LC 14, 4)  LC 27, 3) LC 45,  4)  SC 32   4) XVI.2    4) XIX.7         4) 126, 64
+5) LC 3, SC 2      SC 8       SC 19      SC 26  5)  XI.1    5) XVI.3    5) LC 99         5) 127
+6) I.3         5) IV.1    5) LC 28   4) LC 46,  6)  LC 70,  6) XVI.4    6) LC 100
+                                                                                         6) 128, 65
+7) I.4         6) LC 15,  6) LC 29       SC 27      SC 33   7) XVI.5,   7) LC101,
+                                                                                         7) 129
+                   SC 9
+8) I.5,                   7) VII.1,  5) LC 47   7) XI.2     8) XVI.6    8) SC 43
+                                                                                         8) 130
+9) LC 4        7) LC 16   8) LC 20,  6) LC 48   8) XI.3     9) XVI.7    9) SC 44
+                                                                                         9) 131
+10) I.6        8) IV.2,       SC 12  7) LC 49   9) LC 71    10) XVII.1  10) LC102,
+                                                                                         10) 132
+11) I.7        9) LC 17,  9) VII.2   8) LC 50   10) XI.4    11) LC 79    SC 42
+                                                                                         11) 133, 66
+                   SC10
+12) I.8                   10) VII.3, 9) LC 51,  11) XI.5    12) XVII.2  11) lC103, SC 45
+13) I.9        10) V.1,   11) LC 30,     SC 28  12) XI.6    13) XVII.3  12) LC104,SC 46  12) 134, 67
+14) I.10       11) LC 18,     SC 20  10) LC 52  13) XII.1   14) XVIII.1 13) LC105,       13) 135, 68
+15) LC 5, SC 3     SC 11  12) LC 31  11) LC 53  14) LC 74,  15) LC 80       SC 47        14) 136, 69
+16) LC6        12) V.2    13) LC 32  12) LC 54      SC 34   16) XVIII.2 14) LC106,SC 48  15) 137, 70
+17) II.1,      13) V.3    14) VII.4  13) LC 55  15) XIII.1  17) XVIII.3 15) LC107,SC49   16) 138, 71
+18) LC 7, SC 4 14) V.4,   15) VII.5, 14) LC 56  16) LC 75,  18) LC 81   16) LC108,SC 50
+                                                                                         17) 139, 72
+19) LC 8, SC 5 15) LC 19  16) LC 33  15) VIII.6     SC 35   19) XVIII.4 17) LC109,SC 51
+                                                                                         18) 140, 73
+20) II.2       16) V.5    17) LC 34  16) VIII.7 17) XIII.2, 20) LC 91,  18) LC110,SC52
+                                                                                         19) 141, 74
+                                                    LC 78       SC 39
+21) II.3,      17) V.6    18) VII.6  17) VIII.8                         19) LC111,SC 53
+                                                                                         20) 142, 75
+22) LC 9, SC 6 18) V.7    19) LC 35  18) LC 57  18) XIII.3  21) XIX.1   20) LC112,SC 54
+                                                                                         21) 143, 76
+23) LC 10      19) VI.1,  20) VIII.1 19) IX.1   19) LC 77   22) LC 92,  21) LC113,SC 55
+                                                                                         22) 144, 77
+24) LC 11      20) LC 21, 21) VIII.2 20) IX.2   20) SC 36       SC 40   22) LC114,SC 56
+25) III.1,         SC 13  22) LC 26, 21) IX.3   21) LC 153, 23) LC 93   23) LC115,SC 57  23) 145, 78
+26) LC12 SC 7  21) LC 24,     SC 21  22) IX.4       SC 85   24) XIX.2   24) LC116,SC 58  24) 146, 79
+27) III.2          SC 14  23) LC 37, 23) IX.5   22) XIV.1   25) LC 98,  25) SC 59        25) 147, 80
+                              SC 22                             SC 41
+28) III.3,     22) SC 15             24) LC 57  23) LC 72,              26) LC117,SC 60  26) 148, 81
+29) LC 13      23) VI.2   24) LC 38  25) LC 58,     SC 86   26) XIX.3   27) LC118
+                                                                                         27) 149, 82
+30) III.4      24) VI.3,  25) LC 39             24) XIV.2   27) XIX.4   28) LC119,SC 61
+                                         SC 29
+                                                                                         28) 150, 83
+               25) LC 22, 26) LC 40  26) LC 59, 25) LC 73   28) XIX.5   29) LC120,SC 62
+31) III.5
+                                                                                         29) 151
+                   SC 16  27) LC 41      SC 30  26) XIV.3   29) LC 94   30) LC121
+                                                                                         30) 152, 84
+               26) LC 23, 28) VIII.3 27) X.1    27) XV.1    30) LC 95   31) LC122,SC 42
+                                                                                         31) XX.1
+                   SC 17  29) LC 42, 28) LC 67, 28) XV.2
+               27) VI.4       SC 23      SC 31  29) LC 76,
+               28) LC 25, 30) LC 43, 29) LC 68      SC 87
+                   SC 18      SC 24  30) X.2    30) XV.3
+                          31) VIII.4            31) XV.4
+
+
+September         October          November          December
+1)  XX.2          1) LC196,        1) LC 86, SC 37   1) XXIX.2
+2)  XX.3              SC 107       2) LC 90, SC 38   2) XXIX.3, LC169
+3)  XX.4          2) XXII.1        3) LC  153, SC85  3) XXIX.4
+4)  XXI.1         3) XXII.2        4) LC 154, SC88   4) XXIX.5
+5)  XXI.2         4) XXII.3        5) LC 155, SC 89  5) XXIX.6
+6)  XXI.3,        5) XXII.4        6) LC 156         6) XXIX.7, LC170
+    LC 185        6) XXII.5        7) LC 157, SC 90  7) XXIX.8
+7) LC 178, SC 98  7) XXII.6        8) LC 158         8) LC 171, SC 97
+8) LC 179         8) XXII.7        9) LC 159         9) LC 172
+9) LC 180         9) XXIII.1       10) LC 160        10) LC 173
+10) LC 181        10) XXIII.2      11) XXVII.1,      11) LC 174
+11) LC 182        11) XXIII.3      12) LC 162, SC 92 12) LC 175
+12) XXI.4         12) XXIII.4      13) XXVII.2,      13) LC 176
+13) LC 183        13) XXIV.1           LC 163        14) LC 177
+14) LC 184        14) XXIV.2       14) XXVII.3,      15) XXX.1
+15) XXI.5         15) XXIV.3       15) LC 161,       16) XXX.2
+16) XXI.6         16) XXIV.4           SC 91         17) XXX.3
+17) XXI.7,        17) XXIV.5       16) XXVII.4,      18) XXX.4
+18) LC 116, SC59  18) XXIV.6       17) LC 164, SC 93 19) XXXI.1
+19) XXI.8,        19) XXV.1,       18) XXVII.5       20) XXXI.2
+20) LC 117, SC 60     LC 64        19) XXVIII.1,     21) XXXI.3
+21) LC 186,       20) LC  65       20) LC 165, SC 94 22) XXXI.4
+    SC 99         21) XXV.2,       21) XXVIII.2      23) LC 84
+22) LC187             LC 62        22) XXVIII.3      24) XXXII.1
+23) LC188         22) XXV.3,       23) XXVIII.4,     25) LC 85, SC 37
+24) LC189,            LC 63        24) LC 166, SC 95 26) XXXII.2, LC 87
+    SC100         23) XXV.4        25) XXVIII.5      27) XXXII.3
+25) LC190,        24) XXV.5,       26) XXVIII.6      28) XXXIII.1,
+    SC101             LC 61        27) XXVIII.7          LC 88
+26) LC191,SC 102  25) XXV.6        28) LC 167        29) XXXIII.2,
+27) LC192,SC 103  26) XXVI.1,      29) XXIX.1,           LC 89
+28) LC193, SC104      LC 66        30) LC 168 SC 96  30) LC 90, SC 38
+29) LC194,        27) XXVI.2                         31) XXXIII.3
+    SC105         28) XXVI.3
+30) LC195,        29) LC 69
+    SC106         30) LC 82
+                  31) LC 83, SC 36
