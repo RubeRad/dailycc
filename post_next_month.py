@@ -21,7 +21,8 @@ def post_file(wp, f, t, y, m, d):
     p.date = p.date_modified = datetime(y,m,d,9)
     p.post_status = 'publish'
     p.comment_status = 'closed'
-    wp.call(NewPost(p))
+    if wp:
+        wp.call(NewPost(p))
 
 freal = False
 # login to wordpress
@@ -33,6 +34,8 @@ except: pw = input("Enter password: ")
 if freal:
     dw = Client(dwurl, 'RubeRad', pw)
     dc = Client(dcurl, 'RubeRad', pw)
+else:
+    dw = dc = None
 
 # prepare to loop through days of year
 tt = date.today().timetuple()
@@ -63,26 +66,26 @@ while True:
         if bnum >= 26: bnum -= 26
         bw= str(bnum+1)
 
-        if   wday == 0: fname = 'cc/w'  + w + '.html'; title="Children's Catechism, Week "+w
-        elif wday == 1: fname = 'sc/w'  + w + '.html'; title=   "Shorter Catechism, Week "+w
-        elif wday == 2: fname = 'bcf/w' + bw+ '.html'; title=   "Belgic Confession, Week "+bw
-        elif wday == 3: fname = 'lc/w'  + w + '.html'; title=    "Larger Catechism, Week "+w
-        elif wday == 4: fname = 'sod/w' + w + '.html'; title=     "Canons of Dordt, Week "+w
-        elif wday == 5: fname = 'wcf/w' + w + '.html'; title="Westminster Confession, Week"+w
-        elif wday == 6: fname = 'hc/ld' + w + '.html'; title="Heidelberg Catechism, Lord's Day "+w
-        print(fname + '\t' + title)
-        if freal:
-            post_file(dc, fname, title, d.year, d.month, d.day)
+        if   wday == 0: dcf = 'cc/w'  + w + '.html'; dct="Children's Catechism, Week "+w
+        elif wday == 1: dcf = 'sc/w'  + w + '.html'; dct=   "Shorter Catechism, Week "+w
+        elif wday == 2: dcf = 'bcf/w' + bw+ '.html'; dct=   "Belgic Confession, Week "+bw
+        elif wday == 3: dcf = 'lc/w'  + w + '.html'; dct=    "Larger Catechism, Week "+w
+        elif wday == 4: dcf = 'sod/w' + w + '.html'; dct=     "Canons of Dordt, Week "+w
+        elif wday == 5: dcf = 'wcf/w' + w + '.html'; dct="Westminster Confession, Week"+w
+        elif wday == 6: dcf = 'hc/ld' + w + '.html'; dct="Heidelberg Catechism, Lord's Day "+w
+
 
         # determine appropriate Daily Westminster for this day of the year
         month = monthnames[d.month] # number-->name
-        fname = "w/" + month
-        if d.day < 10: fname += '0'
-        fname += str(d.day) + '_esv.html'
+        dwf = "w/" + month
+        if d.day < 10: dwf += '0'
+        dwf += str(d.day) + '_esv.html'
         Month = month[0].upper() + month[1] + month[2]
-        title = 'Daily Westminster, ' + Month + ' ' + str(d.day)
-        print(fname + '\t' + title)
-        if freal:
-            post_file(dw, fname, title, d.year, d.month, d.day)
+        dwt = 'Daily Westminster, ' + Month + ' ' + str(d.day)
+
+        # print and post
+        print(dwf + '\t' + dwt + '\t' + dcf + '\t' + dct)
+        post_file(dc, dcf, dct, d.year, d.month, d.day)
+        post_file(dw, dwf, dwt, d.year, d.month, d.day)
 
     d += oneday # keep counting
