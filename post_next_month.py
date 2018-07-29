@@ -5,8 +5,7 @@
 from wordpress_xmlrpc import Client, WordPressPost
 from wordpress_xmlrpc.methods.posts import NewPost
 from datetime import datetime, date
-import glob
-import re
+import argparse
 
 def slurp(fname):
     file = open(fname)
@@ -24,18 +23,26 @@ def post_file(wp, f, t, y, m, d):
     if wp:
         wp.call(NewPost(p))
 
-freal = False
+
+
+
+parser = argparse.ArgumentParser("Post next month's Daily Confessions/Westminster")
+parser.add_argument('-t', action='store_true',
+                    help='Test (print but do not post)')
+args = parser.parse_args()
+
 # login to wordpress
 dcurl = "https://dailyconfession.wordpress.com/xmlrpc.php"
 dwurl = "https://dailywestminster.wordpress.com/xmlrpc.php"
 testurl = "https://dcimporttest.wordpress.com/xmlrpc.php"
 try:    pw = slurp('password.txt')
 except: pw = input("Enter password: ")
-if freal:
+if args.t: # test only
+    dw = dc = None
+else:
     dw = Client(dwurl, 'RubeRad', pw)
     dc = Client(dcurl, 'RubeRad', pw)
-else:
-    dw = dc = None
+
 
 # prepare to loop through days of year
 tt = date.today().timetuple()
@@ -71,7 +78,7 @@ while True:
         elif wday == 2: dcf = 'bcf/w' + bw+ '.html'; dct=   "Belgic Confession, Week "+bw
         elif wday == 3: dcf = 'lc/w'  + w + '.html'; dct=    "Larger Catechism, Week "+w
         elif wday == 4: dcf = 'sod/w' + w + '.html'; dct=     "Canons of Dordt, Week "+w
-        elif wday == 5: dcf = 'wcf/w' + w + '.html'; dct="Westminster Confession, Week"+w
+        elif wday == 5: dcf = 'wcf/w' + w + '.html'; dct="Westminster Confession, Week "+w
         elif wday == 6: dcf = 'hc/ld' + w + '.html'; dct="Heidelberg Catechism, Lord's Day "+w
 
 
