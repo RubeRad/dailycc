@@ -27,6 +27,8 @@ def post_file(wp, f, t, y, m, d):
 
 
 parser = argparse.ArgumentParser("Post next month's Daily Confessions/Westminster")
+parser.add_argument('-l', action='store_true',
+                    help='Last month not next month')
 parser.add_argument('-t', action='store_true',
                     help='Test (print but do not post)')
 args = parser.parse_args()
@@ -50,6 +52,8 @@ else:
 tt = date.today().timetuple()
 year   = tt[0]
 thismo = tt[1]  # 1..12
+if (args.l):
+  thismo -= 1
 nextmo = thismo+1
 if nextmo>12:
   year+=1
