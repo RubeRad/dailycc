@@ -16,8 +16,12 @@ def post_file(wp, f, t, y, m, d):
   p = WordPressPost()
   p.title = t
   p.content = slurp(f)
-  # 9am zulu is early Eastern-Pacific
-  p.date = p.date_modified = datetime(y,m,d,9)
+  # All 3 sites are configured to UTC
+  if re.search('deutsche', f):
+    p.date = datetime(y,m,d,4)  #  4am UTC is 5am in UTC+1=Berlin
+  else:
+    p.date = datetime(y,m,d,10) # 10am UTC is 5am eastern, 2am pacific
+  p.date_modified = p.date
   p.post_status = 'publish'
   p.comment_status = 'closed'
   if wp:
@@ -41,7 +45,7 @@ testurl = "https://dcimporttest.wordpress.com/xmlrpc.php"
 try:    pw = slurp('password.txt')
 except: pw = input("Enter password: ")
 if args.t: # test only
-  dw = dc = None
+  dw = dc = tb = None
 else:
   dw = Client(dwurl, 'RubeRad', pw)
   dc = Client(dcurl, 'RubeRad', pw)
