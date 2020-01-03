@@ -42,14 +42,17 @@ dcurl = "https://dailyconfession.wordpress.com/xmlrpc.php"
 dwurl = "https://dailywestminster.wordpress.com/xmlrpc.php"
 tburl = "https://taeglichbekennen.wordpress.com/xmlrpc.php"
 testurl = "https://dcimporttest.wordpress.com/xmlrpc.php"
+try:    un = slurp('username.txt')
+except: un = input("Enter username: ")
+else:
 try:    pw = slurp('password.txt')
 except: pw = input("Enter password: ")
 if args.t: # test only
   dw = dc = tb = None
 else:
-  dw = Client(dwurl, 'RubeRad', pw)
-  dc = Client(dcurl, 'RubeRad', pw)
-  tb = Client(tburl, 'RubeRad', pw)
+  dw = Client(dwurl, un, pw)
+  dc = Client(dcurl, un, pw)
+  tb = Client(tburl, un, pw)
 
 
 # prepare to loop through days of year
