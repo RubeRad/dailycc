@@ -45,6 +45,7 @@ testurl = "https://dcimporttest.wordpress.com/xmlrpc.php"
 try:    un = slurp('username.txt')
 except: un = input("Enter username: ")
 else:
+  pass
 try:    pw = slurp('password.txt')
 except: pw = input("Enter password: ")
 if args.t: # test only
