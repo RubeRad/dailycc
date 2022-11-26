@@ -4,29 +4,37 @@
 
 from wordpress_xmlrpc import Client, WordPressPost
 from wordpress_xmlrpc.methods.posts import NewPost
+
+from os.path  import exists
 from datetime import datetime, date
-import argparse, re
+import argparse, re, sys
 
 def slurp(fname):
-  file  = open(fname)
-  contents = file.read()
-  return contents
+  if exists(fname):
+    file  = open(fname)
+    contents = file.read()
+    return contents
+  #else
+  print('WARNING: file does not exist {}'.format(fname), file=sys.stderr)
+  return ''
 
 def post_file(wp, f, t, y, m, d):
-  p = WordPressPost()
-  p.title = t
-  p.content = slurp(f)
-  # All 3 sites are configured to UTC
-  if re.search('deutsche', f):
-    p.date = datetime(y,m,d,4)  #  4am UTC is 5am in UTC+1=Berlin
+  if exists(f):
+    p = WordPressPost()
+    p.title = t
+    p.content = slurp(f)
+    # All 3 sites are configured to UTC
+    if re.search('deutsche', f):
+      p.date = datetime(y,m,d,4)  #  4am UTC is 5am in UTC+1=Berlin
+    else:
+      p.date = datetime(y,m,d,10) # 10am UTC is 5am eastern, 2am pacific
+    p.date_modified = p.date
+    p.post_status = 'publish'
+    p.comment_status = 'closed'
+    if wp:
+      wp.call(NewPost(p))
   else:
-    p.date = datetime(y,m,d,10) # 10am UTC is 5am eastern, 2am pacific
-  p.date_modified = p.date
-  p.post_status = 'publish'
-  p.comment_status = 'closed'
-  if wp:
-    wp.call(NewPost(p))
-
+    print('WARNING: file does not exist {}'.format(f), file=sys.stderr)
 
 
 
